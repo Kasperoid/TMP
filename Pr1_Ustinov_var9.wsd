@@ -1,0 +1,26 @@
+@startuml
+
+package Пользователи {
+actor Соискатель as Applicant
+actor Эксперт as Expert
+actor Держатель as Holder
+}
+
+package Система {
+usecase "Подача заявления" as UC1
+usecase "Экспертиза" as UC2
+usecase "Результат экспертизы" as UC3
+usecase "Просмотр статуса заявления" as UC4
+usecase "Выдача гранда" as UC5
+}
+
+Applicant --> UC1
+Applicant --> UC4
+
+Expert <-- UC1
+Expert --> UC2
+Expert --> UC3
+
+Holder <-- UC3
+Holder --> UC5
+@enduml
