@@ -1,0 +1,32 @@
+@startuml
+node ClientNode as "Клиент" {
+node ClientBr as "Браузер"
+}
+
+node SotrudnikNode as "Сотрудник" {
+node SotrudnikBr as "Браузер"
+}
+
+node WebServerNode as "Веб_Сервер" {
+node HTTPServerNode as "Http-Сервер"
+}
+
+node BDServerNode as "Сервер_БД" {
+database BDGrant as "БД_Грантов"
+database BDZayavki as "БД_Заявок"
+database BDArchiv as "БД_Архива_Заявок"
+database BDUsers as "БД_Пользователей"
+}
+
+node ClientAdminNode as "Администратор" {
+node AdminPanel as "Панель администратора"
+}
+
+ClientNode -- WebServerNode : https
+
+SotrudnikNode -- WebServerNode : https
+
+WebServerNode -- BDServerNode
+
+ClientAdminNode -- BDServerNode
+@enduml
