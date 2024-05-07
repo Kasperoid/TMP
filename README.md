@@ -1,4 +1,4 @@
-![image](https://github.com/Kasperoid/TMP/assets/100769406/d54fd1ed-c095-4733-a601-fe6fcaa228ba)НУЛЕВАЯ ПРАКТИКА
+НУЛЕВАЯ ПРАКТИКА
 Pr1_Ustinov_var9 - Нулевая практика
 ------
 ПЕРВАЯ ПРАКТИКА
